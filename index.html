@@ -2,59 +2,130 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NotesHub</title>
-</head>
-<body>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
     <style>
-        body {
-            background-color: Grey;
-            color: black;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
-            text-align: center;
-            padding-top: 50px;
         }
-        h1 { font-size: 40px; font-weight: 800; }
-        h2 { font-size: 24px; font-weight: 600; }
-        
-        /* --- */
-        .chapter-list {
-            margin-top: 40px;
+
+        /* Modern Dark Slate Theme */
+        body {
+            background-color: #0f172a; /* Deep dark blue-grey tint */
+            color: #f8fafc; /* Soft off-white for low eye strain */
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        /* Main Heading with Bright Cyan Alert Color */
+        h1 {
+            font-size: 42px;
+            font-weight: 800;
+            color: #06b6d4; /* Premium Cyan */
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Search Bar */
+        .search-container {
+            margin-bottom: 35px;
+        }
+
+        .search-container input {
+            width: 380px;
+            padding: 12px 16px;
+            border-radius: 10px;
+            border: 2px solid #334155; /* Muted border */
+            background-color: #1e293b; /* Slightly lighter than background */
+            color: #f8fafc;
+            font-size: 16px;
+            outline: none;
+        }
+
+        /* Subtle focus effect for input */
+        .search-container input:focus {
+            border-color: #06b6d4;
+        }
+
+        /* Title text above buttons */
+        .tagline {
+            font-size: 20px;
+            font-weight: 600;
+            color: #94a3b8; /* Cool Grey */
+            margin-bottom: 25px;
+        }
+
+        /* Vertical alignment for buttons */
+        .button-group {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 15px;
+            gap: 16px;
         }
-        .chapter-link {
+
+        /* High contrast modern buttons */
+        .nav-btn {
             display: block;
-            width: 250px;
-            padding: 15px;
-            background-color: white;
-            color: black;
+            width: 290px;
+            padding: 14px;
+            background-color: #1e293b;
+            color: #38bdf8; /*  */
             text-decoration: none;
             font-weight: 600;
-            border: 2px solid black;
-            border-radius: 5px;
             font-size: 18px;
+            border: 1.5px solid #334155;
+            border-radius: 12px; /*  */
+            transition: 0.2s ease;
         }
-        .chapter-link:hover {
-            background-color: #ddd;
+
+        /* Hover style */
+        .nav-btn:hover {
+            background-color: #06b6d4; /* Cyan background on hover */
+            color: #0f172a; /* Dark text for contrast */
+            border-color: #06b6d4;
+        }
+
+        /* Footer styling */
+        .footer {
+            margin-top: 60px;
+            padding-right: 40px;
+            text-align: right;
+            font-size: 15px;
+            color: #64748b;
+        }
+
+        .footer span {
+            color: darkorange;
+            font-weight: 600;
         }
     </style>
 </head>
 <body>
-</head>
-<body bgcolor="Grey" style="color: black;font-family: Poppins;font-size: 500;text-align: center;">
-    <br><br><br>
-<h1 style="color: black;font-family: Poppins;font-weight: 1200;font-size: 40px;text-align: center;">NotesHub</h1>
-<hr>
-<b style="color: black;font-weight: 800;font-style: normal;font-family: Poppins;font-size: 25px;" class="tagline">Select Your Topic:</b>
-<div class="chapter-list">
-<a class="chapter-link" href="linear.html">Linear Equation</a>
-<a class="chapter-link" href="trignometry.html">Trignometry</a>
-<a class="chapter-link" href="chemistry.html">Chemistry</a>
-</div>
-<p style="color: black;font-weight: 800;font-family: Poppins;font-size: 23px;text-align: right;padding: 20pxp;"> by Krushna Pawar...</p>
+
+    <h1>NotesHub</h1>
+    
+    <div class="search-container">
+        <input type="text" placeholder="Search for subjects or PYQs...">
+    </div>
+
+    <div class="tagline">Select Your Topic:</div>
+
+    <div class="button-group">
+        <a class="nav-btn" href="science1.html">Science 1</a>
+        <a class="nav-btn" href="science2.html">Science 2</a>
+        <a class="nav-btn" href="history.html">History</a>
+        <a class="nav-btn" href="pyq.html">Previous Year Questions</a>
+    </div>
+
+    <div class="footer">
+        by <span>Krushna Pawar</span>
+    </div>
+
 </body>
 </html>
